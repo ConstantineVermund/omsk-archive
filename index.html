@@ -85,19 +85,62 @@
       <h2 data-i18n="section.surface.title">Surface</h2>
       <p data-i18n="section.surface.text">No confirmed safe routes beyond flooded district.</p>
     </section>
+    
   </main>
   
+<section class="contact-section">
+  <div class="contact-box">
 
-  <script src="script.js"></script>
-  <section class="card contact-card">
-  <h2 data-i18n="section.contact.title">Work With Me</h2>
-  <p data-i18n="section.contact.text">
-    I create atmospheric landing pages, archive-style interfaces, and immersive web presentations for creative and commercial projects. constantine.vermund@gmail.com
-  </p>
+    <h2 class="contact-title">WORK WITH ME</h2>
+
+    <p class="contact-text">
+      I design and develop unique, atmospheric websites and landing pages
+      that help brands stand out through strong visual identity and immersive storytelling.
+    </p>
+
+    <p class="contact-sub">
+      Specializing in creative, experimental and narrative-driven projects.
+    </p>
+
+    <div class="contact-actions">
+      <a href="mailto:constantine.vermund@gmail.com?subject=Freelance%20Inquiry" class="contact-btn">
+        EMAIL ME
+      </a>
+
+      <button class="contact-btn secondary" onclick="copyEmail()">
+        COPY EMAIL
+      </button>
+    </div>
+
+    <p class="contact-email" id="email-text">
+      constantine.vermund@gmail.com
+    </p>
+
+    <p class="copy-notice" id="copy-notice">
+      Email copied
+    </p>
+
+  </div>
 </section>
+<script>
+function copyEmail() {
+  const email = document.getElementById("email-text").innerText;
+  navigator.clipboard.writeText(email);
+
+  const notice = document.getElementById("copy-notice");
+  notice.style.opacity = "1";
+
+  setTimeout(() => {
+    notice.style.opacity = "0";
+  }, 1500);
+}
+</script>
+  <script src="script.js"></script>
+  
   <footer class="footer">
   <p data-i18n="footer.text">Archive interface prototype // atmospheric landing page concept</p>
 </footer>
+
 </body>
 
 </html>

@@ -454,3 +454,90 @@ p {
 .contact-card {
   border-color: rgba(0, 255, 136, 0.22);
 }
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  text-decoration: none;
+  font-family: monospace;
+  transition: 0.2s;
+}
+
+.contact-btn:hover {
+  background: #00ff9c;
+  color: black;
+}
+.contact-section {
+  padding: 80px 20px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid #00ff9c33;
+  padding: 30px;
+  font-family: monospace;
+  color: #00ff9c;
+}
+
+.contact-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.contact-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-sub {
+  font-size: 13px;
+  margin-bottom: 25px;
+  color: #00ff9caa;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-btn:hover {
+  background: #00ff9c;
+  color: #000;
+}
+
+.contact-btn.secondary {
+  border-color: #00ff9c66;
+  color: #00ff9caa;
+}
+
+.contact-email {
+  font-size: 12px;
+  color: #00ff9c66;
+}
+
+/* уведомление */
+.copy-notice {
+  font-size: 12px;
+  color: #00ff9c;
+  opacity: 0;
+  transition: 0.3s;
+}

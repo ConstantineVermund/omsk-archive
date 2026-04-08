@@ -294,3 +294,4 @@ function runBootSequence(lang) {
   lineEl.textContent = "";
   typeLine();
 }
+
