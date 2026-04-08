@@ -1,68 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omsk Underground Archive</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omsk Underground Archive</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+    <div id="boot-screen" class="boot-screen">
+  <div class="boot-content">
+    <p id="boot-line"></p>
+  </div>
+</div>
+    <div class="screen-overlay"></div>
+  <header class="header">
+    <div class="header-top">
+      <div class="lang-switcher">
+        <button class="lang-btn" id="lang-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="lang-ru" onclick="setLang('ru')">RU</button>
+      </div>
+    </div>
 
-<header class="header">
-    <h1>OMSK UNDERGROUND ARCHIVE</h1>
-    <p class="subtitle">Recovered data access</p>
-</header>
+    <h1 class="title-flicker" data-i18n="site.title">OMSK UNDERGROUND ARCHIVE</h1>
+    <p class="subtitle" data-i18n="site.subtitle">Recovered data access</p>
+  </header>
 
-<main class="container">
-
+  <div id="system-status" class="system-status"></div>
+  <main class="container">
     <div class="row">
-        <section class="card big">
-            <h2>Recovered Logs</h2>
-            <p class="terminal-line">
-                <span id="type-text"></span><span class="cursor">█</span>
-            </p>
-        </section>
+      <section class="card big">
+        <h2 data-i18n="section.logs.title">Recovered Logs</h2>
+        <p class="terminal-line">
+          <span id="type-text"></span><span class="cursor">█</span>
+        </p>
+      </section>
 
-        <section class="card safe">
-            <h2>Sector Status</h2>
-            <p>Sector B-12 unstable. Signal interference detected. Movement traces confirmed.</p>
-        </section>
+      <section class="card safe">
+        <h2 data-i18n="section.status.title">Sector Status</h2>
+        <p data-i18n="section.status.text">
+          Sector B-12 unstable. Signal interference detected. Movement traces confirmed.
+        </p>
+      </section>
     </div>
 
     <div class="row">
-        <section class="card warning">
-            <h2>Factions</h2>
-            <p>Bastion. Molot. Amatists. Activity increasing between nodes.</p>
-        </section>
+      <section class="card warning">
+        <h2 data-i18n="section.factions.title">Factions</h2>
+        <p data-i18n="section.factions.text">
+          Bastion. Molot. Amatists. Activity increasing between nodes.
+        </p>
+      </section>
 
-        <section class="card danger">
-            <h2>Anomalies</h2>
-            <p>Biological and energy distortions detected in underground sectors.</p>
-            <button class="btn btn-danger" onclick="toggleArchive()">ACCESS ARCHIVE</button>
-        </section>
+      <section class="card danger">
+        <h2 data-i18n="section.anomalies.title">Anomalies</h2>
+        <p data-i18n="section.anomalies.text">
+          Biological and energy distortions detected in underground sectors.
+        </p>
+        <button 
+  id="archive-btn"
+  class="btn btn-danger"
+  onclick="toggleArchive()"
+  data-i18n="button.archive.open">
+  ACCESS ARCHIVE
+</button>
+        
+      </section>
     </div>
+    <p id="archive-hint" class="archive-hint" data-i18n="hint.archive">
+  Archived records remain sealed until access is granted.
+</p>
 
-    <section id="archive" class="card hidden">
-        <h2>Archive Opened</h2>
-        <p><strong>Log #1:</strong> Movement detected in ventilation corridor.</p>
-        <p><strong>Log #2:</strong> Outpost lost signal for 17 minutes.</p>
-        <p><strong>Log #3:</strong> Unknown sounds near old gateway sector.</p>
+    <section id="archive" class="card archive-block">
+        <div class="archive-scan"></div>
+
+      <h2 data-i18n="section.archive.title">Archive Opened</h2>
+      <p data-i18n="section.archive.log1"><strong>Log #1:</strong> Movement detected in ventilation corridor.</p>
+      <p data-i18n="section.archive.log2"><strong>Log #2:</strong> Outpost lost signal for 17 minutes.</p>
+      <p data-i18n="section.archive.log3"><strong>Log #3:</strong> Unknown sounds near old lock sector.</p>
+      <p data-i18n="section.archive.log4"><strong>Log #4:</strong> The bigwigs are active again in Sector №2.</p>
     </section>
 
     <section class="card">
-        <h2>Surface</h2>
-        <p>No confirmed safe routes beyond flooded district.</p>
+      <h2 data-i18n="section.surface.title">Surface</h2>
+      <p data-i18n="section.surface.text">No confirmed safe routes beyond flooded district.</p>
     </section>
-    
-    <section class="card">
-    <h2>Work With Me</h2>
-    <p>I create atmospheric landing pages and interactive websites.</p>
-    <p>Contact: your@email.com</p>
-    
+  </main>
+  
+
+  <script src="script.js"></script>
+  <section class="card contact-card">
+  <h2 data-i18n="section.contact.title">Work With Me</h2>
+  <p data-i18n="section.contact.text">
+    I create atmospheric landing pages, archive-style interfaces, and immersive web presentations for creative and commercial projects. constantine.vermund@gmail.com
+  </p>
 </section>
-
-</main>
-
-<script src="script.js"></script>
+  <footer class="footer">
+  <p data-i18n="footer.text">Archive interface prototype // atmospheric landing page concept</p>
+</footer>
 </body>
+
 </html>

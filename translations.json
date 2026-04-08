@@ -1,0 +1,87 @@
+{
+  "en": {
+    "boot.lines": [
+  "Initializing system...",
+  "Loading archive modules...",
+  "Establishing secure connection...",
+  "Access granted."
+],
+
+    "meta.title": "Omsk Underground Archive",
+    "site.title": "OMSK UNDERGROUND ARCHIVE",
+    "site.subtitle": "Recovered data access",
+
+    "section.logs.title": "Recovered Logs",
+    "section.status.title": "Sector Status",
+    "section.status.text": "Sector B-12 unstable. Signal interference detected. Movement traces confirmed.",
+    "status.archive.open": "ACCESS GRANTED // ARCHIVE OPENED",
+    "status.archive.close": "ARCHIVE CLOSED // SESSION ENDED",
+    "footer.text": "Archive interface prototype // atmospheric landing page concept",
+    "hint.archive": "Archived records remain sealed until access is granted.",
+    "section.contact.title": "Work With Me",
+"section.contact.text": "I create atmospheric landing pages, archive-style interfaces, and immersive web presentations for creative and commercial projects. constantine.vermund@gmail.com",
+
+    "section.factions.title": "Factions",
+    "section.factions.text": "Bastion. Molot. Iskra. Activity increasing between nodes.",
+
+    "section.anomalies.title": "Anomalies",
+    "section.anomalies.text": "Biological and energy distortions detected in underground sectors.",
+
+    "button.archive": "ACCESS ARCHIVE",
+    "button.archive.open": "ACCESS ARCHIVE",
+"button.archive.close": "CLOSE ARCHIVE",
+
+    "section.archive.title": "Archive Opened",
+    "section.archive.log1": "Log #1: Movement detected in ventilation corridor.",
+    "section.archive.log2": "Log #2: Outpost lost signal for 17 minutes.",
+    "section.archive.log3": "Log #3: Unknown sounds near old lock sector.",
+    "section.archive.log4": "Log #4: The bigwigs are active again in Sector №2.",
+
+    "section.surface.title": "Surface",
+    "section.surface.text": "No confirmed safe routes beyond flooded district.",
+
+    "logs.typewriter": "Movement detected in sector B-12. Signal unstable. Awaiting confirmation."
+  },
+  "ru": {
+
+    "boot.lines": [
+  "Инициализация системы...",
+  "Загрузка модулей архива...",
+  "Установка защищённого соединения...",
+  "Доступ разрешён."
+],
+    "meta.title": "Омский подземный архив",
+    "site.title": "ОМСКИЙ ПОДЗЕМНЫЙ АРХИВ",
+    "site.subtitle": "Доступ к восстановленным данным",
+
+    "section.logs.title": "Восстановленные логи",
+    "section.status.title": "Статус сектора",
+    "section.status.text": "Сектор B-12 нестабилен. Обнаружены помехи сигнала. Следы движения подтверждены.",
+    "status.archive.open": "ДОСТУП РАЗРЕШЁН // АРХИВ ОТКРЫТ",
+    "status.archive.close": "АРХИВ ЗАКРЫТ // СЕАНС ЗАВЕРШЁН",
+    "footer.text": "Прототип архивного интерфейса // концепт атмосферного лендинга",
+    "hint.archive": "Архивные записи остаются закрыты до получения доступа.",
+    "section.contact.title": "Сотрудничество: constantine.vermund@gmail.com",
+"section.contact.text": "Я создаю атмосферные лендинги, интерфейсы в стиле архивов и иммерсивные веб-презентации для творческих и коммерческих проектов.",
+    "section.factions.title": "Фракции",
+    "section.factions.text": "Бастион. Молот. Искра. Активность между узлами усиливается.",
+
+    "section.anomalies.title": "Аномалии",
+    "section.anomalies.text": "В подземных секторах зафиксированы биологические и энергетические искажения.",
+
+    "button.archive": "ОТКРЫТЬ АРХИВ",
+    "button.archive.open": "ОТКРЫТЬ АРХИВ",
+"button.archive.close": "ЗАКРЫТЬ АРХИВ",
+
+    "section.archive.title": "Архив открыт",
+    "section.archive.log1": "Лог #1: Движение замечено в вентиляционном коридоре.",
+    "section.archive.log2": "Лог #2: Один из постов потерял связь на 17 минут.",
+    "section.archive.log3": "Лог #3: Неустановленные звуки у старого шлюзового сектора.",
+    "section.archive.log4": "Лог #4: Воротилы вновь проявили активность в секторе №2.",
+
+    "section.surface.title": "Поверхность",
+    "section.surface.text": "За пределами затопленного района подтверждённых безопасных маршрутов не обнаружено.",
+
+    "logs.typewriter": "Зафиксировано движение в секторе B-12. Сигнал нестабилен. Ожидается подтверждение."
+  }
+}
