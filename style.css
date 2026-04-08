@@ -1,0 +1,209 @@
+body {
+    background: #050505;
+    color: #00ff88;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #0f3;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #00ff88;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #143;
+    background: #101010;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #00ff88;
+    color: black;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #143;
+    background: #0a0a0a;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.08);
+    
+}
+.card h2 {
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+    padding-bottom: 6px;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(0, 255, 136, 0.08);
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 255, 136, 0.3);
+    animation: scan 55s linear infinite;
+}
+/* Разные типы блоков */
+.warning {
+    border-color: #ffaa00;
+    color: #ffaa00;
+}
+
+
+.danger {
+    border-color: #ff4444;
+    color: #ff4444;
+}
+
+.basic
+{
+    border-color: #250c41;
+    color: #a032be;
+    text-shadow: 0 0 5px #67436d;
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.safe {
+    border-color: #00ccff;
+    color: #00ccff;
+}
+
+.warning {
+    border-color: #ffaa00;
+    color: #ffaa00;
+}
+
+.danger {
+    border-color: #ff4444;
+    color: #ff4444;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    cursor: pointer;
+    transition: 0.2s;
+     letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-danger {
+    border: 1px solid red;
+    color: red;
+}
+
+.btn-danger:hover {
+    background: red;
+    color: black;
+}
+.btn:hover {
+    box-shadow: 0 0 10px red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Cursor */
+.cursor {
+    display: inline;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@keyframes scan {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}

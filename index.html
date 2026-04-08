@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omsk Underground Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>OMSK UNDERGROUND ARCHIVE</h1>
+    <p class="subtitle">Recovered data access</p>
+</header>
+
+<main class="container">
+
+    <div class="row">
+        <section class="card big">
+            <h2>Recovered Logs</h2>
+            <p class="terminal-line">
+                <span id="type-text"></span><span class="cursor">█</span>
+            </p>
+        </section>
+
+        <section class="card safe">
+            <h2>Sector Status</h2>
+            <p>Sector B-12 unstable. Signal interference detected. Movement traces confirmed.</p>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="card warning">
+            <h2>Factions</h2>
+            <p>Bastion. Molot. Amatists. Activity increasing between nodes.</p>
+        </section>
+
+        <section class="card danger">
+            <h2>Anomalies</h2>
+            <p>Biological and energy distortions detected in underground sectors.</p>
+            <button class="btn btn-danger" onclick="toggleArchive()">ACCESS ARCHIVE</button>
+        </section>
+    </div>
+
+    <section id="archive" class="card hidden">
+        <h2>Archive Opened</h2>
+        <p><strong>Log #1:</strong> Movement detected in ventilation corridor.</p>
+        <p><strong>Log #2:</strong> Outpost lost signal for 17 minutes.</p>
+        <p><strong>Log #3:</strong> Unknown sounds near old gateway sector.</p>
+    </section>
+
+    <section class="card">
+        <h2>Surface</h2>
+        <p>No confirmed safe routes beyond flooded district.</p>
+    </section>
+    
+    <section class="card">
+    <h2>Work With Me</h2>
+    <p>I create atmospheric landing pages and interactive websites.</p>
+    <p>Contact: your@email.com</p>
+    
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
